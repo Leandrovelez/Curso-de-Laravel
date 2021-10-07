@@ -150,6 +150,12 @@ PHP ARTISAN ROUTE:CACHE  - limpa as rotas em cache
 
 */
 
+
+//---------- ROTAS PARA UM CRUD -------------
+
+Route::resource('products', 'App\Http\Controllers\ProductController');
+
+/*
 Route::group(['namespace' => 'App\Http\Controllers'], function(){
 
     //tudo bem a rota ser a mesma, contanto que o verbo seja diferente, nesse caso é o Post
@@ -163,4 +169,4 @@ Route::group(['namespace' => 'App\Http\Controllers'], function(){
     Route::put('products/{id}', 'ProductController@update')->name('products.update');
     Route::delete('products/{id}', 'ProductController@destroy')->name('products.destroy');
 });
-
+*/
