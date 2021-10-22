@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::resource('products', 'App\Http\Controllers\ProductController');
 
 /*
 |--------------------------------------------------------------------------
@@ -153,7 +154,6 @@ PHP ARTISAN ROUTE:CACHE  - limpa as rotas em cache
 
 //---------- ROTAS PARA UM CRUD -------------
 
-Route::resource('products', 'App\Http\Controllers\ProductController');
 
 /*
 Route::group(['namespace' => 'App\Http\Controllers'], function(){

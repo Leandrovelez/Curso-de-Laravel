@@ -46,7 +46,7 @@ class UserFactory extends Factory
     //  } 
 
     
-    $factory->define(User::class, function(faker $faker){
+    $factory->define(User::class, function(Faker $faker){
         return[
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
